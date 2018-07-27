@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DashboardContainer from "./../../Containers/DashboardContainer/DashboardContainer";
 import Footer from "./../Footer/Footer";
+import ChargeAccount from "./../Dashboard/ChargeAccount/ChargeAccount";
 
 class Dashboard extends Component {
   render() {
@@ -17,6 +18,9 @@ class Dashboard extends Component {
                 </li>
                 <li className="active">Dashboard</li>
               </ol>
+            </div>
+            <div className="row">
+              <ChargeAccount />
             </div>
             <Footer />
           </div>
