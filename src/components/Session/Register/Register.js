@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Register extends Component {
   render() {
@@ -90,10 +91,10 @@ class Register extends Component {
                 </form>
               </div>
               <div className="panel-footer">
-                <button type="button" className="btn btn-default">
+                <Link to="/" type="button" className="btn btn-default">
                   {" "}
                   <i className="fa fa-arrow-left" /> Atras{" "}
-                </button>
+                </Link>
                 <button className="btn btn-default pull-right">
                   {" "}
                   <i className="fa fa-check" /> Registrar{" "}
