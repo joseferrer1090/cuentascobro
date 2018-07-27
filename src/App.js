@@ -8,6 +8,7 @@ import Login from "./components/Session/Login/Login";
 import Register from "./components/Session/Register/Register";
 import Dashboard from "./components/Dashboard/Dashboard";
 import ListAccounts from "./components/Dashboard/ListAccounts";
+import EditAccounts from "./components/Dashboard/EditAccounts";
 
 // Component Administrator
 import AdminPanel from "./components/Admin/Administrator";
@@ -24,6 +25,11 @@ class App extends Component {
             exact
             path="/user/dashboard/listaccounts"
             component={ListAccounts}
+          />
+          <Route
+            exact
+            path="/user/dashboard/editaccounts"
+            component={EditAccounts}
           />
         </Aux>
       </HashRouter>

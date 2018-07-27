@@ -8,7 +8,6 @@ class ListAccount extends Component {
       <div>
         <DashboardContainer>
           <p> lista de cuentas</p>
-          <Footer />
         </DashboardContainer>
       </div>
     );

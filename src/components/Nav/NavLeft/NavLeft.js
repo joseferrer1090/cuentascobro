@@ -35,9 +35,9 @@ class NavLef extends React.Component {
             </Link>
           </li>
           <li>
-            <a href="charts.html">
+            <Link to="/user/dashboard/editaccounts">
               <em className="fa fa-pencil">&nbsp;</em> Modificar Cuentas
-            </a>
+            </Link>
           </li>
           <li>
             <a href="buttons.html">
