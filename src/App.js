@@ -1,32 +1,32 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
+import Aux from "./Containers/Aux";
 import "./styles/generalstyles.css";
 
 // Components User
 import Login from "./components/Session/Login/Login";
 import Register from "./components/Session/Register/Register";
 import Dashboard from "./components/Dashboard/Dashboard";
+import ListAccounts from "./components/Dashboard/ListAccounts";
 
 // Component Administrator
 import AdminPanel from "./components/Admin/Administrator";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loaded: false
-    };
-  }
   render() {
     return (
-      <Router>
-        <div>
+      <HashRouter>
+        <Aux>
           <Route exact path="/" component={Login} />
-          <Route path="/register" component={Register} />
-          <Route path="/user/dashboard" component={Dashboard} />
-          <Route path="/admin/dashboard" component={AdminPanel} />
-        </div>
-      </Router>
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/user/dashboard" component={Dashboard} />
+          <Route
+            exact
+            path="/user/dashboard/listaccounts"
+            component={ListAccounts}
+          />
+        </Aux>
+      </HashRouter>
     );
   }
 }

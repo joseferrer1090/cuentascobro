@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class NavLef extends React.Component {
   render() {
     return (
-      <div>
+      <div id="sidebar-collapse" className="col-sm-3 col-lg-2 sidebar">
         <div className="profile-sidebar">
           <div className="profile-userpic">
             <img
@@ -25,14 +25,14 @@ class NavLef extends React.Component {
         <div className="divider" />
         <ul className="nav menu">
           <li className="active">
-            <a href="index.html">
+            <Link to="/user/dashboard">
               <em className="fa fa-plus">&nbsp;</em> Registrar cuenta
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="widgets.html">
+            <Link to="/user/dashboard/listaccounts">
               <em className="fa fa-list">&nbsp;</em> Mis Cuentas
-            </a>
+            </Link>
           </li>
           <li>
             <a href="charts.html">

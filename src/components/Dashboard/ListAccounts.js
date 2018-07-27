@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import DashboardContainer from "./../../Containers/DashboardContainer/DashboardContainer";
 import Footer from "./../Footer/Footer";
-import ChargeAccount from "./../Dashboard/ChargeAccount/ChargeAccount";
+import ListAccount from "./ListAccount/ListAccount";
 
-class Dashboard extends Component {
+class ListAccounts extends Component {
   render() {
     return (
       <DashboardContainer>
@@ -12,10 +12,10 @@ class Dashboard extends Component {
             <ol class="breadcrumb">
               <li>
                 <a href="#">
-                  <em class="fa fa-plus" />
+                  <em class="fa fa-list" />
                 </a>
               </li>
-              <li class="active">Registro de cuenta</li>
+              <li class="active">Mis cuentas</li>
             </ol>
           </div>
         </div>
@@ -24,4 +24,4 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+export default ListAccounts;

@@ -1,14 +1,12 @@
 import React from "react";
 import NavTop from "./../../components/Nav/NavTop/NavTop";
-import NavLef from "./../../components/Nav/NavLeft/NavLef";
+import NavLeft from "./../../components/Nav/NavLeft/NavLeft";
 
 const DashboardContainer = props => {
   return (
     <div>
       <NavTop />
-      <div id="sidebar-collapse" className="col-sm-3 col-lg-2 sidebar">
-        <NavLef />
-      </div>
+      <NavLeft />
       {props.children}
     </div>
   );
