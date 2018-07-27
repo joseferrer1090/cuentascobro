@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Route, HashRouter } from "react-router-dom";
-import Aux from "./Containers/Aux";
 import "./styles/generalstyles.css";
 
 // Components User
@@ -17,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <Aux>
+        <div>
           <Route exact path="/" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/user/dashboard" component={Dashboard} />
@@ -31,7 +30,7 @@ class App extends Component {
             path="/user/dashboard/editaccounts"
             component={EditAccounts}
           />
-        </Aux>
+        </div>
       </HashRouter>
     );
   }

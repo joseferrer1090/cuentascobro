@@ -40,9 +40,9 @@ class NavLef extends React.Component {
             </Link>
           </li>
           <li>
-            <a href="buttons.html">
+            <Link to="/">
               <em className="fa fa-sign-out">&nbsp;</em> Cerrar Sesion
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
